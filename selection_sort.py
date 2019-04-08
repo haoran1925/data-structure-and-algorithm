@@ -1,4 +1,3 @@
-##### O(n^2)
 ##### Descend
 
 def selection_sort(a):
