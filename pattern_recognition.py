@@ -16,7 +16,7 @@ def read_txt(dir,filename):
 	data = f.readlines()
 	return data
 
-dir = '/Users/tianma/Desktop/Python/dsa/pattern/'
+dir = '/Users/xxxx/Desktop/Python/dsa/pattern/'
 filename = 'input8.txt'
 data = read_txt(dir,filename)
 
