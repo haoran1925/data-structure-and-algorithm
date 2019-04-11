@@ -7,9 +7,8 @@ def insert_sort(a):
 				b = a[j-1]
 				a[j-1] = a[j]
 				a[j] = b
+				j -=1
 			else:
 				break
-			j -=1
-			
 	return a
 
