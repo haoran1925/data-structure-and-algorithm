@@ -3,9 +3,7 @@
 ###### Given a set of n distinct points in the plane, find every (maximal) line segment that connects a subset of 4 or more of the points.
 ###### Task: http://coursera.cs.princeton.edu/algs4/assignments/collinear.html
 
-
 import matplotlib
-import numpy as numpy
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
