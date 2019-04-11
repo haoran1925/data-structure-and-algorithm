@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 
 ### Read text and get the points
+### Read text and get the points
 def read_txt(dir,filename):
 	file_path = dir+filename
 	f = open(file_path, 'r')
@@ -36,13 +37,14 @@ plt.scatter(x,y)
 
 
 ### Search for points in the same line
+### Search for points in the same line
 slope_set = []
 slope_index_count =[]
 count = 0 
 for i in range(len(x)):
 	for j in range(i+1,len(x)):
 		vertical_count = 0
-		if x[i]-x[j]!=0:
+		if x[i]-x[j]!=0:   # In case the slope is infinite
 			slope = (y[i]-y[j])/(x[i]-x[j])
 			if slope not in slope_set:
 				slope_set.append(slope)
@@ -54,7 +56,7 @@ for i in range(len(x)):
 					x_vals = [x[i],x[j]]
 					y_vals = [y[i],y[j]]
 					plt.plot(x_vals, y_vals, '--')
-		elif x[i]-x[j]==0:
+		elif x[i]-x[j]==0:  # In case the slope is infinite
 			vertical_count +=1
 			if vertical_count ==3:
 				count +=1
@@ -64,20 +66,3 @@ for i in range(len(x)):
 
 print ('There are {} lines'.format(count))
 plt.savefig('{}pattern.png'.format(dir))
-
-
-			
-
-
-		
-
-
-
-
-
-
-
-
-
-
-
