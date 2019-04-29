@@ -1,6 +1,6 @@
 # Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
-def strStr(self, haystack, needle):
+def str_index_find(self, haystack, needle):
   lh,ln = len(haystack),len(needle)
   if ln == 0:
       return 0
